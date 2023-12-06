@@ -1,0 +1,242 @@
+[
+    {
+      "Local": "acesso como produtor rural",
+      "Heuristica_Violada": "7",
+      "Descrição": "Com o acesso de produtor rural, ao fazer login no sistema, é enviado para a tela de catálogo de produtos, que é voltada para comerciantes.",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará muitas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "Após login, entrar em uma tela de produtos cadastrados pelo produtor rural."
+    },
+    {
+      "Local": "tela home como produtor rural",
+      "Heuristica_Violada": "1",
+      "Descrição": "Não tem informação sobre quais produtos estão cadastrados pelo produtor rural, nem uma forma de remover o produto.",
+      "Frequência": "Comum",
+      "Impacto": "Difícil superação",
+      "Persistência": "Atrapalhará muitas vezes",
+      "Severidade": "Grande",
+      "Solução": "Criar uma tela de produtos cadastrados pelo produtor rural."
+    },
+    {
+        "Local": "tela home como produtor rural",
+        "Heuristica_Violada": "2",
+        "Descrição": "Não tem informação sobre quais produtos estão cadastrados pelo produtor rural, nem uma forma de remover o produto.",
+        "Frequência": "Comum",
+        "Impacto": "Difícil superação",
+        "Persistência": "Atrapalhará muitas vezes",
+        "Severidade": "Grande",
+        "Solução": "Criar uma tela de produtos cadastrados pelo produtor rural."
+      },
+      {
+        "Local": "tela home como produtor rural",
+        "Heuristica_Violada": "8",
+        "Descrição": "Não tem informação sobre quais produtos estão cadastrados pelo produtor rural, nem uma forma de remover o produto.",
+        "Frequência": "Comum",
+        "Impacto": "Difícil superação",
+        "Persistência": "Atrapalhará muitas vezes",
+        "Severidade": "Grande",
+        "Solução": "Criar uma tela de produtos cadastrados pelo produtor rural."
+      },
+    {
+      "Local": "Tela inicial do aplicativo",
+      "Heuristica_Violada": "7",
+      "Descrição": "Ao abrir fica uma tela estática no início esperando o usuário apertar o botão de começar.",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará muitas vezes",
+      "Severidade": "Cosmética",
+      "Solução": "Pode apenas abrir e após alguns segundos fazer o fade para a tela de acesso, ou, caso seja o primeiro acesso, para a de seleção de perfil."
+    },
+    {
+      "Local": "Tela home do aplicativo",
+      "Heuristica_Violada": "4",
+      "Descrição": "A tela home e a tela de pesquisa do aplicativo exercem a mesma função.",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará muitas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "Manter apenas a tela home do aplicativo ou dar nova funcionalidade para a home."
+    },
+    {
+      "Local": "Tela home do aplicativo",
+      "Heuristica_Violada": "6",
+      "Descrição": "A tela home e a tela de pesquisa do aplicativo exercem a mesma função.",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará muitas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "Manter apenas a tela home do aplicativo ou dar nova funcionalidade para a home."
+    },
+    {
+      "Local": "Tela de pesquisa",
+      "Heuristica_Violada": "6",
+      "Descrição": "Ao apertar no título da tela, volta para a tela home, assim como o botão home. Também é importante ressaltar que a tela de pesquisa também exerce as mesmas funções da tela home.",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "Alterar tela home para que tenha funcionalidades diferentes da tela de pesquisa e remover a função de voltar para a home ao apertar o título."
+    },
+    {
+        "Local": "Tela de pesquisa",
+        "Heuristica_Violada": "4",
+        "Descrição": "Ao apertar no título da tela, volta para a tela home, assim como o botão home. Também é importante ressaltar que a tela de pesquisa também exerce as mesmas funções da tela home.",
+        "Frequência": "Comum",
+        "Impacto": "fácil superação",
+        "Persistência": "Atrapalhará poucas vezes",
+        "Severidade": "Pequeno",
+        "Solução": "Alterar tela home para que tenha funcionalidades diferentes da tela de pesquisa e remover a função de voltar para a home ao apertar o título."
+      },
+    {
+      "Local": "Meu Perfil",
+      "Heuristica_Violada": "4",
+      "Descrição": "os dados estão todos em um mesmo parágrafo, sem uma divisão clara do que é cada coisa",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "criar campos com para ser preenchido com seus respectivos signos para um maior esclarecimento do que preencher"
+    },
+    {
+      "Local": "página após clicar na “Lupa”e na “Casinha” no menu inferior",
+      "Heuristica_Violada": "4",
+      "Descrição": "Ambos os signos estáticos levam pra área de pesquisa, isso pode confundir um pouco, e ambos foram prototipado de formas diferente",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "padronizar em apenas uma página de pesquisa"
+    },
+    {
+      "Local": "página após clicar na “Casinha” no menu inferior",
+      "Heuristica_Violada": "2",
+      "Descrição": "o problema é agravante principalmente ao clicar na “lupa”, que já está na tela de pesquisa, e desejar voltar para pagina inicial que é Comumente associada a “casinha”, mas aqui iremos pra outra pagina de pesquisa",
+      "Frequência": "Comum",
+      "Impacto": "Difícil superação",
+      "Persistência": "Atrapalhará muitas vezes",
+      "Severidade": "Grande",
+      "Solução": "associar a casinha ao inicio, uma página antes da pesquisa,"
+    },
+    {
+      "Local": "página após clicar na “Casinha” no menu inferior",
+      "Heuristica_Violada": "2",
+      "Descrição": "o problema é agravante principalmente ao clicar na “lupa”, que já está na tela de pesquisa, e desejar voltar para pagina inicial que é Comumente associada a “casinha”, mas aqui iremos pra outra pagina de pesquisa",
+      "Frequência": "Comum",
+      "Impacto": "Difícil superação",
+      "Persistência": "Difícil superação",
+      "Severidade": "Grande",
+      "Solução": "associar a casinha ao inicio, uma página antes da pesquisa,"
+    },
+    {
+      "Local": "Tela com as “fazendas” após clicar na fruta",
+      "Heuristica_Violada": "7",
+      "Descrição": "basicamente tem caracteres desnecessários em volta da estrela e valor de avaliações",
+      "Frequência": "Comum",
+      "Impacto": "Difícil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Cosmética",
+      "Solução": "reestruturar a forma que adiciona um certificado, para deixar claro que é possivel adicionar mais de um"
+    },
+    {
+      "Local": "Pagina inicial (qual o meu perfil)",
+      "Heuristica_Violada": "3",
+      "Descrição": "Depois que você seleciona se você é vendedor ou produtor, não consegue mais voltar pra essa tela",
+      "Frequência": "Raro",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "colocar algum modo de voltar, fazer logout e etc"
+    },
+    {
+      "Local": "Logar na Aplicação como Comerciante e cadastrar produto",
+      "Heuristica_Violada": "2",
+      "Descrição": "bem como o inverso, aqui o usuario está com liberdade acima do que devia ser permitido, visto que a aplicação tem uma distinção clara entre produtor e comerciante, cadastrar produto deveria ser exclusivo de comerciante",
+      "Frequência": "Comum",
+      "Impacto": "Difícil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Cosmética",
+      "Solução": "remover essa funcionalidade da tela do comerciante"
+    },
+    {
+      "Local": "Tela de Perfil",
+      "Heuristica_Violada": "3",
+      "Descrição": "Após fazer o login o usuário não possui nenhuma forma de deslogar de sua conta",
+      "Frequência": "Comum",
+      "Impacto": "Difícil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Grande",
+      "Solução": "Colocar uma opção de 'sair da conta'"
+    },
+    {
+      "Local": "Tela de Perfil",
+      "Heuristica_Violada": "7",
+      "Descrição": "Na tela de perfil os dados pessoais não estão especificados apenas escritos na tela como “email@gmail.com” ou “Rua Oliveira Silva”",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Cosmética",
+      "Solução": "Especificar campos para cada um dos dados como 'Nome: Eduardo Souza' ou 'Endereço: Rua Oliveira Silva'"
+    },
+    {
+      "Local": "Tela principal",
+      "Heuristica_Violada": "5",
+      "Descrição": "No menu principal na parte inferior tanto o ícone de 'casa' quanto o ícone de 'lupa' levam ao mesmo objetivo que é fazer uma pesquisa",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Pequeno",
+      "Solução": "Deixar apenas um dos ícones uma vez que eles fazem a mesma função"
+    },
+    {
+        "Local": "Tela principal",
+        "Heuristica_Violada": "4",
+        "Descrição": "No menu principal na parte inferior tanto o ícone de 'casa' quanto o ícone de 'lupa' levam ao mesmo objetivo que é fazer uma pesquisa",
+        "Frequência": "Comum",
+        "Impacto": "fácil superação",
+        "Persistência": "Atrapalhará poucas vezes",
+        "Severidade": "Pequeno",
+        "Solução": "Deixar apenas um dos ícones uma vez que eles fazem a mesma função"
+      },
+      {
+        "Local": "Tela principal",
+        "Heuristica_Violada": "2",
+        "Descrição": "No menu principal na parte inferior tanto o ícone de 'casa' quanto o ícone de 'lupa' levam ao mesmo objetivo que é fazer uma pesquisa",
+        "Frequência": "Comum",
+        "Impacto": "fácil superação",
+        "Persistência": "Atrapalhará poucas vezes",
+        "Severidade": "Pequeno",
+        "Solução": "Deixar apenas um dos ícones uma vez que eles fazem a mesma função"
+      },
+    {
+      "Local": "Tela de ajuda e tela de perfil",
+      "Heuristica_Violada": "4",
+      "Descrição": "Os elementos clicáveis não seguem um padrão de cor uma vez que na tela de ajuda o 'Clique aqui' é azul e na tela de perfil o 'Alterar' é verde",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Cosmética",
+      "Solução": "Colocar os elementos clicáveis em uma cor apenas"
+    },
+    {
+      "Local": "Tela de escolha entre Produtor Rural e Comerciante",
+      "Heuristica_Violada": "2",
+      "Descrição": "Ao clicar em 'Clique aqui' ao lado do 'Precisa de ajuda?' o usuário é levado a uma tela de perguntas frequentes porém ele acaba logado em uma conta aleatória",
+      "Frequência": "Comum",
+      "Impacto": "Difícil superação",
+      "Persistência": "Difícil superação",
+      "Severidade": "Grande",
+      "Solução": "Fazer a tela de perguntas frequentes e dúvidas pública, para que o usuário não precise logar antes de visualizar ou tirar dúvidas sobre o aplicativo"
+    },
+    {
+      "Local": "Tela de fazendas",
+      "Heuristica_Violada": "7",
+      "Descrição": "Caracteres desnecessários ao redor das estrelas e avaliações",
+      "Frequência": "Comum",
+      "Impacto": "fácil superação",
+      "Persistência": "Atrapalhará poucas vezes",
+      "Severidade": "Cosmética",
+      "Solução": "Retirar esses elementos"
+    }
+  ]

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vega Lite Bar Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+    <div id="vis_bar" style="padding-bottom: 40px;"></div>
+    <div id="vis_bar_2" style="padding-bottom: 40px;"></div>
+    <div id="vis_pie" style="padding-bottom: 40px;"></div>
+    <div id="vis_pie_2" style="padding-bottom: 40px;"></div>
+    <div id="vis_pie_3" style="padding-bottom: 40px;"></div>
+    <div id="vis_pie_4" style="padding-bottom: 40px;"></div>
+    <script type="text/javascript">
+        var spec1 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": { "url": "data.json" },
+            "mark": "bar",
+            "width": 600,
+            "height": 400,
+            "encoding": {
+                "x": { "aggregate": "count", "field": "Heuristica_Violada", "type": "quantitative", "title": "Quantidade" },
+                "y": { "field": "Heuristica_Violada", "type": "nominal", "title": "Heuristica Violada" },
+                "color": { "field": "Heuristica_Violada", "type": "nominal" }
+            }
+        };
+
+        vegaEmbed('#vis_bar', spec1);
+    </script>
+    <script type="text/javascript">
+        var spec2 = {
+          "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+          "data": {"url": "data.json"},
+          "width": 500,
+          "height": 300,
+          "mark": {"type": "arc", "tooltip": true},
+          "encoding": {
+            "theta": {"aggregate": "count", "field": "Heuristica_Violada", "type": "quantitative","title" : "Quantidade"},
+            "color": {"field": "Heuristica_Violada", "type": "nominal", "title" : "Heuristica Violada"},
+            "tooltip": [
+              {"aggregate": "count", "field": "Heuristica_Violada", "type": "quantitative", "title": "Quantidade"}
+            ]
+          },
+          "view": {"stroke": null}
+        };
+      
+        vegaEmbed('#vis_pie', spec2);
+      </script>
+    <script type="text/javascript">
+        var spec3 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": { "url": "data.json" },
+            "width": 500,
+            "height": 300,
+            "mark": "arc",
+            "encoding": {
+                "theta": { "aggregate": "count", "field": "Frequência", "type": "quantitative", "title": "Quantidade" },
+                "color": { "field": "Frequência", "type": "nominal", "title": "Frequência" },
+                "tooltip": [
+                {"aggregate": "count", "field": "Frequência", "type": "quantitative", "title": "Quantidade"}
+              ]
+            },
+            "view": { "stroke": null }
+        };
+
+        vegaEmbed('#vis_pie_2', spec3);
+    </script>
+    <script type="text/javascript">
+        var spec4 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": { "url": "data.json" },
+            "mark": "bar",
+            "width": 600,
+            "height": 100,
+            "encoding": {
+                "x": { "aggregate": "count", "field": "Impacto", "type": "quantitative", "title": "Quantidade" },
+                "y": { "field": "Impacto", "type": "nominal", "title": "Heuristica Violada" },
+                "color": { "field": "Impacto", "type": "nominal" }
+            }
+        };
+
+        vegaEmbed('#vis_bar_2', spec4);
+    </script>
+    <script type="text/javascript">
+        var spec4 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": { "url": "data.json" },
+            "width": 500,
+            "height": 300,
+            "mark": "arc",
+            "encoding": {
+                "theta": { "aggregate": "count", "field": "Severidade", "type": "quantitative", "title": "Quantidade" },
+                "color": { "field": "Severidade", "type": "nominal", "title": "Severidade" },
+                "tooltip": [
+                {"aggregate": "count", "field": "Severidade", "type": "quantitative", "title": "Quantidade"}
+              ]
+            },
+            "view": { "stroke": null }
+        };
+
+        vegaEmbed('#vis_pie_3', spec4);
+    </script>
+    <script type="text/javascript">
+        var spec5 = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "data": { "url": "data.json" },
+            "width": 500,
+            "height": 300,
+            "mark": "arc",
+            "encoding": {
+                "theta": { "aggregate": "count", "field": "Persistência", "type": "quantitative", "title": "Quantidade" },
+                "color": { "field": "Persistência", "type": "nominal", "title": "Persistência" },
+                "tooltip": [
+                {"aggregate": "count", "field": "Persistência", "type": "quantitative", "title": "Quantidade"}
+              ]
+            },
+            "view": { "stroke": null }
+        };
+
+        vegaEmbed('#vis_pie_4', spec5);
+    </script>
+</body>
+
+</html>
