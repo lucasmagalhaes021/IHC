@@ -16,21 +16,21 @@
     <div id="vis_pie_3" style="padding-bottom: 40px;"></div>
     <div id="vis_pie_4" style="padding-bottom: 40px;"></div>
     <script type="text/javascript">
-        var spec1 = {
-            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-            "data": { "url": "data.json" },
-            "mark": "bar",
-            "width": 600,
-            "height": 400,
-            "encoding": {
-                "x": { "aggregate": "count", "field": "Heuristica_Violada", "type": "quantitative", "title": "Quantidade" },
-                "y": { "field": "Heuristica_Violada", "type": "nominal", "title": "Heuristica Violada" },
-                "color": { "field": "Heuristica_Violada", "type": "nominal" }
-            }
-        };
-
-        vegaEmbed('#vis_bar', spec1);
-    </script>
+      var spec1 = {
+          "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+          "data": { "url": "data.json" },
+          "mark": "bar",
+          "width": 600,
+          "height": 200,
+          "encoding": {
+              "y": { "aggregate": "count", "field": "Heuristica_Violada", "type": "quantitative", "title": "Quantidade" },
+              "x": { "field": "Heuristica_Violada", "type": "nominal", "title": "Heuristica Violada", "sort": "-y" },
+              "color": { "field": "Heuristica_Violada", "type": "nominal" }
+          }
+      };
+  
+      vegaEmbed('#vis_bar', spec1);
+  </script>
     <script type="text/javascript">
         var spec2 = {
           "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -58,10 +58,10 @@
             "height": 300,
             "mark": "arc",
             "encoding": {
-                "theta": { "aggregate": "count", "field": "Frequência", "type": "quantitative", "title": "Quantidade" },
-                "color": { "field": "Frequência", "type": "nominal", "title": "Frequência" },
+                "theta": { "aggregate": "count", "field": "Frequencia", "type": "quantitative", "title": "Quantidade" },
+                "color": { "field": "Frequencia", "type": "nominal", "title": "Frequência" },
                 "tooltip": [
-                {"aggregate": "count", "field": "Frequência", "type": "quantitative", "title": "Quantidade"}
+                {"aggregate": "count", "field": "Frequencia", "type": "quantitative", "title": "Quantidade"}
               ]
             },
             "view": { "stroke": null }
@@ -112,10 +112,10 @@
             "height": 300,
             "mark": "arc",
             "encoding": {
-                "theta": { "aggregate": "count", "field": "Persistência", "type": "quantitative", "title": "Quantidade" },
-                "color": { "field": "Persistência", "type": "nominal", "title": "Persistência" },
+                "theta": { "aggregate": "count", "field": "Persistencia", "type": "quantitative", "title": "Quantidade" },
+                "color": { "field": "Persistencia", "type": "nominal", "title": "Persistência" },
                 "tooltip": [
-                {"aggregate": "count", "field": "Persistência", "type": "quantitative", "title": "Quantidade"}
+                {"aggregate": "count", "field": "Persistencia", "type": "quantitative", "title": "Quantidade"}
               ]
             },
             "view": { "stroke": null }
